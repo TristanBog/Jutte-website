@@ -12,9 +12,9 @@ def submit():
         return redirect(f'/{user_input}')
     return redirect(url_for('home'))
 
-@app.route('/wortel')
-def wortel():
-    return render_template('wortel.html')
+@app.route('/intro')
+def intro():
+    return render_template('intro.html')
 
 @app.route('/<path:input>')
 def dynamic_page(input):
