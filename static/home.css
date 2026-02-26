@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: hsl(40, 30%, 92%);
+  color: hsl(25, 30%, 18%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 2.5rem;
+}
+
+.error {
+  background-color: hsl(0, 50%, 95%);
+  color: hsl(0, 50%, 30%);
+  border: 1px solid hsl(0, 50%, 80%);
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card {
+  background-color: hsl(42, 35%, 96%);
+  border: 1px solid hsl(35, 25%, 80%);
+  border-radius: 4px;
+  padding: 24px;
+  box-shadow: 0 2px 8px -2px hsla(25, 30%, 20%, 0.15), 
+              0 1px 2px -1px hsla(25, 30%, 20%, 0.1);
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+input[type="text"] {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid hsl(35, 25%, 80%);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.125rem;
+  color: hsl(25, 30%, 18%);
+  padding-bottom: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-bottom-color: hsl(25, 45%, 35%);
+}
+
+button {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid hsl(25, 45%, 35%);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: hsl(25, 45%, 35%);
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+button:hover {
+  color: hsl(25, 50%, 45%);
+  border-bottom-color: hsl(25, 50%, 45%);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  display: block;
+}

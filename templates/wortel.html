@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wortel</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Wortel</h1>
+
+    <div class="card">
+      <pre>Hey liefie
+
+Ja, dit was het geniale idee voor jouw verjaardagscadeau waarover ik je verteld had.
+
+Dit is hoe het werkt:
+
+Toen ik in Oslo was, heb je van mij een aantal brieven gekregen. In die brieven staat er altijd een woord. Dit woord kan je in deze website die ik voor je hebt gemaakt ingeven om iets te zien. Dit leek me leuk, maar ik wou niet al mijn liefdesbrieven op het internet zetten. Schrijven is leuker. Maar ik wou je dit toch geven omdat ik een leuke toevoeging vond.
+Het feit dat je dit leest wilt zeggen dat je mijn eerste brief hebt geopend en de code correct heb ingegeven, goed zo!
+
+Het zou maar saai zijn als je enkel de woorden moet ingeven die ik jou geef, is dat niet? Daarom heb ik er een aantal extra woorden ingestoken die je zelf zal moeten vinden. De geheimen van de woorden die je niet vindt, blijven verstopt... De woorden hebben altijd wel iets te maken met jou, ik of wij.
+
+
+Veel plezier in Oslo en met deze brieven! Hopelijk ben je hier even enthousiast over als ik was toen ik dit maakte.
+
+Kusjes
+Trissie xxx</pre>
+      <br>
+      <img src="{{ url_for('static', filename='foto-samen.jpg') }}" alt="Foto samen" class="photo">
+      <br>
+      <button onclick="window.location.href='/'">Terug</button>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='home.js') }}"></script>
+</body>
+</html>
